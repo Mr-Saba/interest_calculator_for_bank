@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: calc(100%/3);
+    height: 85px;
+    border: 1px solid rgb(116, 115, 115);
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+}
+.select {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    height: 30px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.marginBottom15 {
+    margin-bottom: 15px;
+}
+.marginBottom5 {
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.smallText {
+    font-size: 13px;
+}
+.mediumText {
+    font-size: 14px;
+}
+
+.flex1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.innerFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    flex-wrap: nowrap;
+}
+.line {
+    width: 450px;
+    height: 1px;
+    background-color: rgb(197, 197, 197);
+}
+.button {
+    width: 130px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.blueCell {
+    background-color: #b01eb3;
+    width: 12px;
+    height: 12px;
+}
+.greyCell {
+    background-color: grey;
+    width: 12px;
+    height: 12px;
+}
+.textWithCell {
+    display: flex;
+}
+.textWithCell div {
+    margin-right: 7px;
+}
+.chart {
+    margin: 10px;
+}
+
+@media screen and (max-width: 400px) and (max-height: 900px) {
+    body, html {
+        overflow: hidden;
+    }
+    .container {
+        margin-top: 0px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 10px;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .box {
+        width: 100%;
+        height: 80px;
+        margin: 0px;
+        padding-top: 12px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .box div {
+        /* margin-top: 5px; */
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    .select {
+        height: 30px;
+        font-size: 16px;
+    }
+    .box:nth-child(1), .box:nth-child(2) {
+        border-bottom: none;
+    }
+    .flex1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+    .flex1 div {
+        width: 100%;
+    } 
+    .innerFlex {
+        width: 90%;
+        justify-content: space-around;
+    }
+    .innerFlex div {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        height: 40px;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .bold {
+        font-size: 18px;
+    }
+    .textWithCell div {
+        width: 12px;
+    }
+    #future_value, #principal, #interest {
+        text-align: right;
+    }
+    .chart {
+        margin: 0px;
+        width: 100%;
+        height: 250px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="assets/bank-icon.png" type="image/png" />
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="box">
+                <div class="marginBottom5">Amount</div>
+                <select id="amount" class="select">
+                    <option value="250000">250 000</option>
+                    <option value="300000">300 000</option>
+                    <option value="400000">400 000</option>
+                    <option value="500000">500 000</option>
+                    <option value="600000">600 000</option>
+                    <option value="700000">700 000</option>
+                    <option value="800000">800 000</option>
+                    <option value="700000">700 000</option>
+                    <option value="900000">900 000</option>
+                    <option value="1000000">1 000 000</option>
+                </select>
+            </div>
+            <div class="box">
+                <div class="marginBottom5">Investment Rate</div>
+                <select id="investment_rate" class="select">
+                    <option value="0.01">Defence (1%)</option>
+                    <option value="0.02">Patrimonial (2%)</option>
+                    <option value="0.03">Equilibre (3%)</option>
+                    <option value="0.04">Dynamique (4%)</option>
+                    <option value="0.05">Indice CAC-40 (5%)</option>
+                </select>
+            </div>
+            <div class="box">
+                <div class="marginBottom5">Investment Time Span</div>
+                <select id="investment_time" class="select">
+                    <option value="10">10 years</option>
+                    <option value="15">15 years</option>
+                    <option value="20">20 years</option>
+                    <option value="30">30 years</option>
+                    <option value="40">40 years</option>
+                    <option value="50">50 years</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex1">
+            <div>
+                <div class="innerFlex">
+                    <div class="marginBottom15 bold">Future Value:</div>
+                    <div id="future_value" class="bold"></div>
+                </div>
+                <div class="marginBottom15 line"></div>
+                <div class="innerFlex">
+                    <div class="textWithCell">
+                        <div class="blueCell"></div>
+                        <div class="marginBottom15 smallText">Principal:</div>
+                    </div>
+                    <div id="principal" class="smallText"></div>
+                </div>
+                <div class="innerFlex">
+                    <div class="textWithCell">
+                    <div class="greyCell"></div>
+                    <div class="marginBottom15 smallText">Interest:</div>
+                </div>
+                <div id="interest" class="smallText"></div>
+            </div>
+        </div>
+        <div>
+            <button id="button" class="button">Calculate</button>
+        </div>    
+    </div>
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div> 
+</div>
+
+<script src="script.js"></script>
